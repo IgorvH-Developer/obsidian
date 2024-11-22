@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"68bf788e936cf288","type":"group","x":-840,"y":1160,"width":1480,"height":880,"label":"Группа без названия"},
+		{"id":"32132dc557d0da0a","type":"group","x":-432,"y":380,"width":803,"height":471,"label":"Ограничения инструментов "},
+		{"id":"22fb004c0bbcc552","type":"group","x":-65,"y":1580,"width":570,"height":360,"label":"Работы с экстремумами"},
+		{"id":"d2b8ca648c0c53b3","type":"group","x":-812,"y":1240,"width":540,"height":360,"label":"Триггеры"},
+		{"id":"2b719833cbd18265","type":"group","x":-410,"y":-180,"width":760,"height":230,"label":"Стратегия"},
+		{"id":"0537864727eddb7a","type":"group","x":-130,"y":1240,"width":730,"height":200,"label":"Работа в экстремальных ситуациях"},
+		{"id":"43711951fb825184","type":"group","x":-360,"y":180,"width":659,"height":100,"label":"Оценка стратегии"},
+		{"id":"c4f12da8023ad468","type":"text","text":"Определяемся с рынком (страной)","x":-220,"y":-460,"width":380,"height":80},
+		{"id":"d66ee88ec861ce97","type":"text","text":"Определяемся с секторами","x":-179,"y":-320,"width":298,"height":62},
+		{"id":"22913ab562ee8d0e","type":"text","text":"**Моментум стратегии**, реагирующие на различные сигналы внешнего мира для страховки или усиления позиции ","x":-20,"y":-160,"width":350,"height":190},
+		{"id":"7d2210b1285f9386","type":"text","text":"**Макро стратегии**. Делаем ставку на развитии рынка, сегмента или компании в долгую.","x":-390,"y":-160,"width":315,"height":190},
+		{"id":"02e36b673784adc6","type":"text","text":"Модель для ","x":477,"y":-71,"width":250,"height":60},
+		{"id":"97a161ad1c292a80","type":"text","text":"Определяемся с метриками","x":-340,"y":200,"width":250,"height":60},
+		{"id":"d50cbcee687434ea","type":"text","text":"Оцениваем прибыль/риск","x":-1,"y":200,"width":280,"height":60},
+		{"id":"ae7067df38bfc841","type":"text","text":"Обоснование мат аппарата","x":-207,"y":400,"width":293,"height":80},
+		{"id":"2c143a150f6dad6e","type":"text","text":"Проверка совместимости данных с выведенными условиями","x":11,"y":713,"width":304,"height":111},
+		{"id":"71bac2b4f456eff7","type":"text","text":"Описание условий для применимости мат аппарата.","x":-198,"y":500,"width":275,"height":91},
+		{"id":"d6f539bff603c621","type":"text","text":"**Создание триггеров** для случаев, когда условия, необходимые для нашего мат аппарата, перестают выполняться","x":-405,"y":697,"width":370,"height":127},
+		{"id":"75e5bdf3823b8588","type":"text","text":"Создание моделей предсказывающих предстоящее срабатывание триггера.\n","x":-770,"y":1260,"width":456,"height":140},
+		{"id":"3a072bae15dcd80b","type":"text","text":"Модель проверяющая ложное ли это срабатывание триггера? И проверяющее когда актив придёт в норму (будет снова удовлетворять условию)","x":-792,"y":1440,"width":500,"height":140},
+		{"id":"d92220c6f3f05e98","type":"text","text":"Использование более сложных и чувствительных моделей","x":122,"y":1291,"width":281,"height":98},
+		{"id":"2b0d7111414e9efc","type":"text","text":"Прогнозирование возвращения из экстремального состояния в нормальное","x":-25,"y":1800,"width":453,"height":80},
+		{"id":"40babed8058df077","type":"text","text":"Модель проверяющая насколько обоснованно экстремальное событие (напр. всплеск волатильности)","x":-33,"y":1600,"width":469,"height":120},
+		{"id":"ad7b09a9defe936d","type":"text","text":"Проверка гипотез на удовлетворение условиям","x":22,"y":960,"width":381,"height":80}
+	],
+	"edges":[
+		{"id":"cdd5dc47b9d2b049","fromNode":"c4f12da8023ad468","fromSide":"bottom","toNode":"d66ee88ec861ce97","toSide":"top"},
+		{"id":"1e7e5773fdb982e6","fromNode":"97a161ad1c292a80","fromSide":"right","toNode":"d50cbcee687434ea","toSide":"left"},
+		{"id":"d382bee71ad6c9f8","fromNode":"43711951fb825184","fromSide":"bottom","toNode":"32132dc557d0da0a","toSide":"top"},
+		{"id":"034351f325f734da","fromNode":"71bac2b4f456eff7","fromSide":"bottom","toNode":"d6f539bff603c621","toSide":"top"},
+		{"id":"77802d5935531dea","fromNode":"71bac2b4f456eff7","fromSide":"bottom","toNode":"2c143a150f6dad6e","toSide":"top"},
+		{"id":"8bb993adbc64f12e","fromNode":"ad7b09a9defe936d","fromSide":"left","toNode":"d6f539bff603c621","toSide":"bottom"},
+		{"id":"454e11c358202312","fromNode":"d92220c6f3f05e98","fromSide":"top","toNode":"ad7b09a9defe936d","toSide":"bottom"},
+		{"id":"f3641e519d1276fa","fromNode":"75e5bdf3823b8588","fromSide":"right","toNode":"d6f539bff603c621","toSide":"bottom"},
+		{"id":"015653e66996cbb2","fromNode":"d66ee88ec861ce97","fromSide":"bottom","toNode":"2b719833cbd18265","toSide":"top"},
+		{"id":"e6ad496cb4488f23","fromNode":"2b719833cbd18265","fromSide":"bottom","toNode":"43711951fb825184","toSide":"top"},
+		{"id":"ab37d6bc44611c5a","fromNode":"3a072bae15dcd80b","fromSide":"right","toNode":"d6f539bff603c621","toSide":"bottom"},
+		{"id":"f11d35725eb803bc","fromNode":"40babed8058df077","fromSide":"bottom","toNode":"2b0d7111414e9efc","toSide":"top"}
+	]
+}

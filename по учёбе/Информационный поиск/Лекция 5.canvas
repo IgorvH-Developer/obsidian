@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"ef1a30272698d1f7","type":"text","text":"R=1","x":-609,"y":-309,"width":250,"height":60},
+		{"id":"81a6e33fed64acb2","type":"text","text":"R=0","x":-359,"y":-309,"width":250,"height":60},
+		{"id":"80ee76f890004ee0","type":"text","text":"$p_t \\sim c_1$","x":-609,"y":-249,"width":250,"height":60},
+		{"id":"dae53775d20c4c81","type":"text","text":"$u_t \\sim c_2$","x":-359,"y":-249,"width":250,"height":60},
+		{"id":"669bc7ad8eea2446","type":"text","text":"$1 - p_t \\sim D_R - c_1$","x":-609,"y":-189,"width":250,"height":60},
+		{"id":"03cb965ed27e31e8","type":"text","text":"$1 - u_t \\sim D_\\overline{R} - c_2$","x":-359,"y":-189,"width":250,"height":60},
+		{"id":"85f495a4c2ebbe47","type":"text","text":"$t \\in D$","x":-859,"y":-249,"width":250,"height":60},
+		{"id":"ccd72b8fe1d38000","type":"text","text":"$t \\notin D$","x":-859,"y":-189,"width":250,"height":60}
+	],
+	"edges":[]
+}
