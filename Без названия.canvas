@@ -1,14 +1,26 @@
 {
 	"nodes":[
-		{"id":"70676d6ffd442f3c","x":-559,"y":460,"width":509,"height":50,"type":"text","text":"IMSI в чёрном списке, причина привязана к правилу"},
-		{"id":"739e1ff968ac66cf","x":3,"y":460,"width":250,"height":60,"type":"text","text":"IMSI в белом списке"},
-		{"id":"ae16ec8eb6bc9efd","x":302,"y":462,"width":498,"height":58,"type":"text","text":"IMSI в чёрном списке, причина привязана к префиксу"},
-		{"id":"a5190b69bc4bf1d0","x":76,"y":340,"width":437,"height":50,"type":"text","text":"Привязана ли к префиксу IMSI причина?"},
+		{"id":"70676d6ffd442f3c","type":"text","text":"IMSI в чёрном списке, причина привязана к правилу","x":-559,"y":460,"width":509,"height":50},
+		{"id":"739e1ff968ac66cf","type":"text","text":"IMSI в белом списке","x":3,"y":460,"width":250,"height":60},
+		{"id":"ae16ec8eb6bc9efd","type":"text","text":"IMSI в чёрном списке, причина привязана к префиксу","x":302,"y":462,"width":498,"height":58},
+		{"id":"a5190b69bc4bf1d0","type":"text","text":"Привязана ли к префиксу IMSI причина?","x":76,"y":340,"width":437,"height":50},
 		{"id":"1d889fe057d73338","type":"text","text":"Есть ли правило по префиксу IMSI с LAC/RAC?","x":128,"y":-80,"width":460,"height":60},
 		{"id":"989e63b0284556e0","type":"text","text":"Есть ли правило для текущего LAC/RAC","x":-220,"y":-220,"width":386,"height":60},
 		{"id":"07fd0ff0a4b7c8b9","type":"text","text":"Начало","x":-152,"y":-320,"width":250,"height":60},
 		{"id":"70d80983e7dcfbd1","type":"text","text":"Есть ли правило по префиксу IMSI без LAC/RAC?","x":-559,"y":180,"width":460,"height":60},
-		{"id":"83ca636af8e86045","x":-76,"y":60,"width":348,"height":70,"type":"text","text":"Есть ли вообще IMSI правила без LAC/RAC?"}
+		{"id":"83ca636af8e86045","type":"text","text":"Есть ли вообще IMSI правила без LAC/RAC?","x":-76,"y":60,"width":348,"height":70},
+		{"id":"9b92908af0fb2d5a","type":"text","text":"**Есть ли правило с непустым racList и непустым lacList, содержащее рассматриваемые значения rac и lac?**","x":2425,"y":-120,"width":520,"height":60},
+		{"id":"f287d08a5a9086f7","type":"text","text":"**Есть ли правило с непустым racList и пустым lacList, содержащее рассматриваемое значение rac?**","x":2125,"y":26,"width":500,"height":61},
+		{"id":"8ec97bf5a7f155ce","type":"text","text":"**Есть ли в правиле подходящий префикс imsi (под это подпадает и отсутствие префикса)?**","x":2820,"y":26,"width":440,"height":61},
+		{"id":"2227259a5a52c2e7","type":"text","text":"**Есть ли в правиле подходящий префикс imsi (под это подпадает и отсутствие префикса)?**","x":2650,"y":160,"width":440,"height":70},
+		{"id":"14717e1235ffbb39","type":"text","text":"**Есть ли правило с пустым racList и непустым lacList, содержащее рассматриваемое значение lac?**","x":1990,"y":160,"width":500,"height":70},
+		{"id":"08bacd478e0057b1","type":"text","text":"**Есть ли правило с пустым racList и пустым lacList?**","x":1895,"y":320,"width":499,"height":50},
+		{"id":"3f453cb682e95f28","type":"text","text":"**Есть ли в правиле подходящий префикс imsi (под это подпадает и отсутствие префикса)?**","x":2525,"y":320,"width":440,"height":60},
+		{"id":"ba4449d32eceb242","type":"text","text":"**белый список**","x":1800,"y":455,"width":190,"height":50},
+		{"id":"f062e97cece608c3","type":"text","text":"**Есть ли в правиле подходящий префикс imsi (под это подпадает и отсутствие префикса)?**","x":2145,"y":455,"width":435,"height":60},
+		{"id":"f7d29bb934848e72","type":"text","text":"**Для префикса или для всего правила есть gmmCause?**","x":2490,"y":540,"width":370,"height":80},
+		{"id":"f2249ff44f33353a","type":"text","text":"**белый список**","x":2250,"y":680,"width":250,"height":60},
+		{"id":"953a5008a69d0f3d","type":"text","text":"**чёрный список**","x":2650,"y":680,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"dbbb150e44ee2a02","fromNode":"07fd0ff0a4b7c8b9","fromSide":"bottom","toNode":"989e63b0284556e0","toSide":"top"},
@@ -21,6 +33,24 @@
 		{"id":"6385cceb540e715a","fromNode":"1d889fe057d73338","fromSide":"bottom","toNode":"83ca636af8e86045","toSide":"top","label":"Нет"},
 		{"id":"769302ab0bc265a7","fromNode":"83ca636af8e86045","fromSide":"bottom","toNode":"70676d6ffd442f3c","toSide":"top","label":"Нет"},
 		{"id":"11c0058704bfc864","fromNode":"83ca636af8e86045","fromSide":"bottom","toNode":"70d80983e7dcfbd1","toSide":"top","label":"Да"},
-		{"id":"6599f7414a04ae12","fromNode":"989e63b0284556e0","fromSide":"bottom","toNode":"70d80983e7dcfbd1","toSide":"top","label":"Нет"}
+		{"id":"6599f7414a04ae12","fromNode":"989e63b0284556e0","fromSide":"bottom","toNode":"70d80983e7dcfbd1","toSide":"top","label":"Нет"},
+		{"id":"28049995f68c41c9","fromNode":"9b92908af0fb2d5a","fromSide":"bottom","toNode":"f287d08a5a9086f7","toSide":"top","label":"нет"},
+		{"id":"21086a33d9f6cceb","fromNode":"f287d08a5a9086f7","fromSide":"bottom","toNode":"14717e1235ffbb39","toSide":"top","label":"нет"},
+		{"id":"9acaa0bb5ad8aa58","fromNode":"14717e1235ffbb39","fromSide":"bottom","toNode":"08bacd478e0057b1","toSide":"top","label":"нет"},
+		{"id":"05cb37c905b0f12e","fromNode":"08bacd478e0057b1","fromSide":"bottom","toNode":"ba4449d32eceb242","toSide":"top","label":"нет"},
+		{"id":"092e0057eeff1c9e","fromNode":"08bacd478e0057b1","fromSide":"bottom","toNode":"f062e97cece608c3","toSide":"top","label":"да"},
+		{"id":"55eb734daac9a34c","fromNode":"f062e97cece608c3","fromSide":"right","toNode":"f7d29bb934848e72","toSide":"top","label":"да"},
+		{"id":"670ce33f2cf6c7ba","fromNode":"f7d29bb934848e72","fromSide":"bottom","toNode":"f2249ff44f33353a","toSide":"top","label":"нет"},
+		{"id":"878af3173bdd8ccd","fromNode":"f7d29bb934848e72","fromSide":"bottom","toNode":"953a5008a69d0f3d","toSide":"top","label":"да"},
+		{"id":"e2fc34363c92b0ee","fromNode":"f062e97cece608c3","fromSide":"bottom","toNode":"f2249ff44f33353a","toSide":"top","label":"нет"},
+		{"id":"05fa3defa55a7598","fromNode":"14717e1235ffbb39","fromSide":"bottom","toNode":"3f453cb682e95f28","toSide":"top","label":"да"},
+		{"id":"e0023ae801353d0c","fromNode":"3f453cb682e95f28","fromSide":"bottom","toNode":"f7d29bb934848e72","toSide":"top","label":"да"},
+		{"id":"3fccc9c168e7c9f9","fromNode":"3f453cb682e95f28","fromSide":"left","toNode":"08bacd478e0057b1","toSide":"right","label":"нет"},
+		{"id":"61394c6dd0b16829","fromNode":"f287d08a5a9086f7","fromSide":"bottom","toNode":"2227259a5a52c2e7","toSide":"top","label":"да"},
+		{"id":"d9d5300297f8693b","fromNode":"2227259a5a52c2e7","fromSide":"left","toNode":"14717e1235ffbb39","toSide":"right","label":"нет"},
+		{"id":"2cc9e285dad3d9e8","fromNode":"2227259a5a52c2e7","fromSide":"right","toNode":"f7d29bb934848e72","toSide":"right","label":"да"},
+		{"id":"a7e75180742cd9ae","fromNode":"9b92908af0fb2d5a","fromSide":"bottom","toNode":"8ec97bf5a7f155ce","toSide":"top","label":"да"},
+		{"id":"abfca62dbc59baed","fromNode":"8ec97bf5a7f155ce","fromSide":"left","toNode":"f287d08a5a9086f7","toSide":"right","label":"нет"},
+		{"id":"8b2cc885fa46b869","fromNode":"8ec97bf5a7f155ce","fromSide":"right","toNode":"f7d29bb934848e72","toSide":"right","label":"да"}
 	]
 }

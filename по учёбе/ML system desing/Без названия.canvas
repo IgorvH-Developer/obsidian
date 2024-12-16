@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"3d6d38c4669a8571","type":"group","x":-500,"y":-400,"width":1400,"height":520,"label":"Вариант 1"},
+		{"id":"82fd661676426d0c","type":"group","x":440,"y":-240,"width":260,"height":320,"label":"Страница с выдачей"},
+		{"id":"35fc1c829f114dd7","type":"group","x":1520,"y":1140,"width":260,"height":320,"label":"Страница с выдачей"},
+		{"id":"371034218c1dd04e","x":860,"y":1235,"width":600,"height":130,"type":"group","label":"Поисковик"},
+		{"id":"36edf45f47cc2a7a","type":"group","x":800,"y":940,"width":488,"height":127,"label":"Базы данных"},
+		{"id":"2e7b8fbc5f411dd9","type":"text","text":"Карточка товара n","x":460,"y":20,"width":220,"height":50},
+		{"id":"37fa941090733587","type":"text","text":"Карточка товара 3","x":460,"y":-92,"width":220,"height":50},
+		{"id":"be72775906e0bf9c","type":"text","text":"ML модель","x":-140,"y":-117,"width":160,"height":75},
+		{"id":"46fbeece99f51393","type":"text","text":"Поисковик","x":140,"y":-117,"width":200,"height":67},
+		{"id":"d2a8d489a22e7b24","type":"text","text":"Пользователь","x":-420,"y":-108,"width":180,"height":50},
+		{"id":"0c617b72161e91a6","type":"text","text":"Карточка товара 2","x":460,"y":-158,"width":220,"height":50},
+		{"id":"4e6a05ef03dfd6f6","type":"text","text":"Карточка товара 1","x":460,"y":-227,"width":220,"height":50},
+		{"id":"7ccdd9aa15f24952","type":"text","text":"БД с карточками товаров","x":132,"y":-264,"width":216,"height":87},
+		{"id":"e95d8bd3b59ff67a","type":"text","text":"Пользователь","x":200,"y":1279,"width":180,"height":50},
+		{"id":"139a7c69a81b6d47","type":"text","text":"ML модель","x":500,"y":1266,"width":160,"height":75},
+		{"id":"1b5523ff7f8c2707","x":896,"y":1255,"width":300,"height":80,"type":"text","text":"Первичный отбор (запрос K карточек из БД)"},
+		{"id":"d5cfabb7cb6eb469","x":1240,"y":1251,"width":200,"height":90,"type":"text","text":"Ранжирование (colbert)"},
+		{"id":"8c4ec9f704cb4680","type":"text","text":"Векторная БД изображений","x":820,"y":960,"width":208,"height":87},
+		{"id":"f54642cd779adf6b","type":"text","text":"БД с карточками товаров","x":1052,"y":960,"width":216,"height":87},
+		{"id":"88c1fa05fe92c40a","x":500,"y":971,"width":201,"height":65,"type":"text","text":"Новые товары"},
+		{"id":"522a4bf89f541026","type":"text","text":"Карточка товара 1","x":1540,"y":1153,"width":220,"height":50},
+		{"id":"c2bfb9d149141061","type":"text","text":"Карточка товара 2","x":1540,"y":1222,"width":220,"height":50},
+		{"id":"262106f032260e1e","type":"text","text":"Карточка товара 3","x":1540,"y":1288,"width":220,"height":50},
+		{"id":"aea2727011292932","type":"text","text":"Карточка товара n","x":1540,"y":1400,"width":220,"height":50}
+	],
+	"edges":[
+		{"id":"20dc340207f3ff6b","fromNode":"d2a8d489a22e7b24","fromSide":"right","toNode":"be72775906e0bf9c","toSide":"left","label":"Фото"},
+		{"id":"0781c54607da9a6a","fromNode":"be72775906e0bf9c","fromSide":"right","toNode":"46fbeece99f51393","toSide":"left","label":"Текст"},
+		{"id":"7925f96905e8861a","fromNode":"46fbeece99f51393","fromSide":"top","toNode":"7ccdd9aa15f24952","toSide":"bottom","fromEnd":"arrow"},
+		{"id":"bb3e0cd166fa11c0","fromNode":"46fbeece99f51393","fromSide":"right","toNode":"82fd661676426d0c","toSide":"left"},
+		{"id":"7883a31c84d35a49","fromNode":"e95d8bd3b59ff67a","fromSide":"right","toNode":"139a7c69a81b6d47","toSide":"left","label":"Фото"},
+		{"id":"40c8118054530395","fromNode":"88c1fa05fe92c40a","fromSide":"right","toNode":"36edf45f47cc2a7a","toSide":"left"},
+		{"id":"fe5e4ee90fb68e36","fromNode":"139a7c69a81b6d47","fromSide":"right","toNode":"371034218c1dd04e","toSide":"left","label":"текст/\nэмбеддинги"},
+		{"id":"7f471a0edfb87300","fromNode":"36edf45f47cc2a7a","fromSide":"bottom","toNode":"1b5523ff7f8c2707","toSide":"top"},
+		{"id":"397f76c6f12ece33","fromNode":"1b5523ff7f8c2707","fromSide":"right","toNode":"d5cfabb7cb6eb469","toSide":"left"},
+		{"id":"a637fd4c85a55721","fromNode":"371034218c1dd04e","fromSide":"right","toNode":"35fc1c829f114dd7","toSide":"left"}
+	]
+}
