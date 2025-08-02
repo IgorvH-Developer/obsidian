@@ -1,5 +1,8 @@
 {
 	"nodes":[
+		{"id":"588d2bb3425f8386","x":380,"y":1280,"width":1380,"height":580,"type":"group","label":"imsi_rules_parser"},
+		{"id":"30418bbd473c44e9","x":1240,"y":1355,"width":387,"height":465,"type":"group","label":"Цикл отбора правил"},
+		{"id":"29c20d03de6b920c","x":440,"y":1373,"width":630,"height":255,"type":"group","label":"парсинг конфига"},
 		{"id":"70676d6ffd442f3c","type":"text","text":"IMSI в чёрном списке, причина привязана к правилу","x":-559,"y":460,"width":509,"height":50},
 		{"id":"739e1ff968ac66cf","type":"text","text":"IMSI в белом списке","x":3,"y":460,"width":250,"height":60},
 		{"id":"ae16ec8eb6bc9efd","type":"text","text":"IMSI в чёрном списке, причина привязана к префиксу","x":302,"y":462,"width":498,"height":58},
@@ -20,7 +23,17 @@
 		{"id":"f062e97cece608c3","type":"text","text":"**Есть ли в правиле подходящий префикс imsi (под это подпадает и отсутствие префикса)?**","x":2145,"y":455,"width":435,"height":60},
 		{"id":"f7d29bb934848e72","type":"text","text":"**Для префикса или для всего правила есть gmmCause?**","x":2490,"y":540,"width":370,"height":80},
 		{"id":"f2249ff44f33353a","type":"text","text":"**белый список**","x":2250,"y":680,"width":250,"height":60},
-		{"id":"953a5008a69d0f3d","type":"text","text":"**чёрный список**","x":2650,"y":680,"width":250,"height":60}
+		{"id":"953a5008a69d0f3d","type":"text","text":"**чёрный список**","x":2650,"y":680,"width":250,"height":60},
+		{"id":"ff728fa84ff6c45d","x":637,"y":1393,"width":250,"height":60,"type":"text","text":"Парсинг префикса."},
+		{"id":"af9b9356a75f1f36","x":460,"y":1548,"width":250,"height":60,"type":"text","text":"Сохраняем префикс"},
+		{"id":"0e383799d519a42c","x":800,"y":1548,"width":250,"height":60,"type":"text","text":"Сохраняем префикс + рэнж"},
+		{"id":"4cef6ee5d2a59f46","x":585,"y":1090,"width":250,"height":50,"type":"text","text":"Чтение конфигов"},
+		{"id":"9936179c6e1e9b08","type":"text","text":"Решение конфликтов между новым правилом и текущими","x":1260,"y":1608,"width":347,"height":60},
+		{"id":"71bb1782666fac71","x":1280,"y":1500,"width":307,"height":78,"type":"text","text":"Решение конфликтов в рамках нового правила"},
+		{"id":"2e9471b51df61824","type":"text","text":"Добавление нового правила в текущие","x":1260,"y":1700,"width":347,"height":72},
+		{"id":"118c151cb1899118","x":1309,"y":1393,"width":250,"height":60,"type":"text","text":"Извлечение нового правила из хранилища"},
+		{"id":"9c5d10144f570e25","x":875,"y":1940,"width":250,"height":60,"type":"text","text":"Хранилище правил"},
+		{"id":"f6d4dba7518d89a1","x":1660,"y":1140,"width":313,"height":60,"type":"text","text":"Применение правил"}
 	],
 	"edges":[
 		{"id":"dbbb150e44ee2a02","fromNode":"07fd0ff0a4b7c8b9","fromSide":"bottom","toNode":"989e63b0284556e0","toSide":"top"},
@@ -51,6 +64,16 @@
 		{"id":"2cc9e285dad3d9e8","fromNode":"2227259a5a52c2e7","fromSide":"right","toNode":"f7d29bb934848e72","toSide":"right","label":"да"},
 		{"id":"a7e75180742cd9ae","fromNode":"9b92908af0fb2d5a","fromSide":"bottom","toNode":"8ec97bf5a7f155ce","toSide":"top","label":"да"},
 		{"id":"abfca62dbc59baed","fromNode":"8ec97bf5a7f155ce","fromSide":"left","toNode":"f287d08a5a9086f7","toSide":"right","label":"нет"},
-		{"id":"8b2cc885fa46b869","fromNode":"8ec97bf5a7f155ce","fromSide":"right","toNode":"f7d29bb934848e72","toSide":"right","label":"да"}
+		{"id":"8b2cc885fa46b869","fromNode":"8ec97bf5a7f155ce","fromSide":"right","toNode":"f7d29bb934848e72","toSide":"right","label":"да"},
+		{"id":"9c12691476830062","fromNode":"4cef6ee5d2a59f46","fromSide":"bottom","toNode":"29c20d03de6b920c","toSide":"top","label":"сырой префикс"},
+		{"id":"501d13c2e6ec2af5","fromNode":"ff728fa84ff6c45d","fromSide":"bottom","toNode":"af9b9356a75f1f36","toSide":"top","label":"Просто префикс?"},
+		{"id":"02875b72c43c3877","fromNode":"ff728fa84ff6c45d","fromSide":"bottom","toNode":"0e383799d519a42c","toSide":"top","label":"Ренж?"},
+		{"id":"d351179ad1864e98","fromNode":"29c20d03de6b920c","fromSide":"bottom","toNode":"9c5d10144f570e25","toSide":"top","label":"Сохраняем результат\nчтения кофигов"},
+		{"id":"32471fc836db958c","fromNode":"f6d4dba7518d89a1","fromSide":"left","toNode":"30418bbd473c44e9","toSide":"top","label":"Отбор правил\nиз переданного списка"},
+		{"id":"e792f7b2e26930d7","fromNode":"71bb1782666fac71","fromSide":"bottom","toNode":"9936179c6e1e9b08","toSide":"top"},
+		{"id":"0d989487784b128e","fromNode":"9936179c6e1e9b08","fromSide":"bottom","toNode":"2e9471b51df61824","toSide":"top"},
+		{"id":"b44da669b2dcdb31","fromNode":"118c151cb1899118","fromSide":"bottom","toNode":"71bb1782666fac71","toSide":"top"},
+		{"id":"074715f81ab770ae","fromNode":"9c5d10144f570e25","fromSide":"right","toNode":"118c151cb1899118","toSide":"left"},
+		{"id":"c4467e35efec4a68","fromNode":"30418bbd473c44e9","fromSide":"bottom","toNode":"f6d4dba7518d89a1","toSide":"right","label":"Отобранные правила"}
 	]
 }
